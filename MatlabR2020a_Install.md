@@ -1,28 +1,70 @@
 # How to install Matlab R2020a on Ubuntu 18.04 #
 
-### 1. 前往Mathworks，官网，下载最新版本的Matlab压缩包 ###
+### 1. Goto Mathworks and Download the new .zip file ###
 
 https://www.mathworks.com/downloads/
 
- ***点击下载后若有账号，则直接跳转到下载页面，选择下载Linux版本后，会在浏览器的下载文件夹下载一个.zip的压缩文件夹
+ *** If you have an account, you will directly goto the download page. Pleas select the Distribution for Linux.
+ 
+![](Pictures/Install_MatlabR2020a/1.png)
 
-### 2. 打开Terminal,在主目录下新建文件夹，并解压缩 ###
+### 2. Open a terminal and Goto the home folder and unzip the .zip file ###
 
 ``` 
-  $mkdir Mathworks_R2020a
-  $cd Mathworks_R2020a/
-  ~/Mathworks_R2020a$unzip matlab_R2020a_glnxa64.zip
+  $ mkdir Mathworks_R2020a
+  $ cd Mathworks_R2020a/
+  ~/Mathworks_R2020a$ unzip matlab_R2020a_glnxa64.zip
 ``` 
 
-### 3. 在解压后的文件夹内执行,并输入用户名密码 ###
+### 3. After unzip, you should input the follow command in this folder ###
 
 ``` 
   ~/Mathworks_R2020a$sudo ./install
 ``` 
 
-### 4. 然后会弹出下载页面，输入用户名，密码后直接按指示下一步，下一步安装就好 ###
+### 4. Input the user name and password and Always click Next ###
 
-***其中有一步出现提示，Create symbolic links to MATLAB scripts in:/usr/local/bin，在该选向前打勾，表明同意在/usr/local/bin目录下创建符号连接，这样以后可以直接在终端输入matlab来打开
+***You will see this selection"Create symbolic links to MATLAB scripts in:/usr/local/bin" during the installation.
+   Select this and You can after that using this command "matlab" to run Matlab on your terminal.
+   
+ ### 5. Finish for the Installation ###
  
- ### 5. 完成安装 ###
+# How to activate Matlab R2020a on Ubuntu 18.04 #
+
+### 6. Open a terminal and Goto the local folder of Matlab on your computer ###
+
+
+``` 
+  $ cd /usr/local/MATLAB/R2020a/bin/
+  /usr/local/MATLAB/R2020a/bin/$ ./activate_matlab.sh
+``` 
+
+### 7. Activate Matlab R2020a on your computer ###
+
++++ 7.1 Select "Activate automatically using the Internet and Next"
+
+![](Pictures/Install_MatlabR2020a/a_1.png)
+
++++ 7.2 Log in to your Mathworks Account
+
+![](Pictures/Install_MatlabR2020a/a_2.png)
+
++++ 7.3 Select your current license
+
+![](Pictures/Install_MatlabR2020a/a_3.png)
+
++++ 7.4 Input your Login Name
+
+![](Pictures/Install_MatlabR2020a/a_4.png)
+
++++ 7.5 Finish
+
+![](Pictures/Install_MatlabR2020a/a_5.png)
+
+### 8. Open a terminal and run Matlab on your computer
+
+``` 
+  $ matlab
+```
+
  
