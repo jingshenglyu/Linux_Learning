@@ -19,7 +19,7 @@ https://www.mathworks.com/downloads/
 ### 3. After unzip, you should input the follow command in this folder ###
 
 ``` 
-  ~/Mathworks_R2020a$sudo ./install
+  ~/Mathworks_R2020a$ sudo ./install
 ``` 
 
 ### 4. Input the user name and password and Always click Next ###
